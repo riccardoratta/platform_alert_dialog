@@ -1,7 +1,7 @@
 name: platform_alert_dialog
 description: Flutter plugin for build alert dialogs adapted to the current platform.
 version: 1.0.0
-author: Riccardo Ratta
+author: Riccardo Ratta <riccardoratta@gmail.com>
 homepage: https://github.com/riccardoratta/platform_alert_dialog
 
 environment:
