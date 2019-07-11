@@ -1,6 +1,6 @@
 name: example
 description: An example for the platform_alert_dialog plugin.
-version: 1.0.0+1
+version: 1.0.0+2
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
