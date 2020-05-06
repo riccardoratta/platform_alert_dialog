@@ -62,6 +62,7 @@ class PlatformAlertDialog extends StatelessWidget {
           ),
           actions: actions,
         );
+      case TargetPlatform.macOS:
       case TargetPlatform.iOS:
         return CupertinoAlertDialog(
           title: title,
@@ -159,6 +160,7 @@ class PlatformDialogAction extends StatelessWidget {
             );
         }
         break;
+      case TargetPlatform.macOS:
       case TargetPlatform.iOS:
         switch (actionType) {
           case ActionType.Default:
