@@ -53,6 +53,7 @@ class PlatformAlertDialog extends StatelessWidget {
 
   Widget build(BuildContext context) {
     switch (Theme.of(context).platform) {
+      case TargetPlatform.windows:
       case TargetPlatform.android:
       case TargetPlatform.fuchsia:
         return AlertDialog(
@@ -73,7 +74,7 @@ class PlatformAlertDialog extends StatelessWidget {
         );
     }
     // unreachable
-    return null;
+    return Container(width: 0,height: 0,);
   }
 }
 
