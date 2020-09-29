@@ -137,6 +137,7 @@ class PlatformDialogAction extends StatelessWidget {
   Widget build(BuildContext context) {
     switch (Theme.of(context).platform) {
       case TargetPlatform.android:
+      case TargetPlatform.windows:
       case TargetPlatform.fuchsia:
         switch (actionType) {
           case ActionType.Default:
@@ -184,6 +185,6 @@ class PlatformDialogAction extends StatelessWidget {
         }
     }
     // unreachable
-    return null;
+    return Container(width: 0,height: 0,);
   }
 }
